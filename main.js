@@ -9,8 +9,8 @@ $.ajax({
             let p = $('<p></p>').html(data.products[i].title).attr('class', 'desc');
             let brand = $('<p></p>').html(data.products[i].vendor);
             $(div).append(img);
-            $(div).append(p);
             $(div).append(brand);
+            $(div).append(p);            
             $('main').append(div);
         }
     },
